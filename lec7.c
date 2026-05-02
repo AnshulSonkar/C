@@ -73,31 +73,67 @@
 // } 
 
 
+// #include<stdio.h>
+// int main()
+// {
+//     int rup,ch;
+//     printf("Enter rupee : ");
+//     scanf("%d",&rup);
+//     printf("\nChoices : ");
+//     printf("\n Enter 1 : Doller");
+//     printf("\n Enter 2 : Euro");
+//     printf("\n Enter 3 : Canadian Doller");
+//     printf("\n Enter 4 : Saudi Riyal");
+//     printf("\nEnter choice : ");
+//     scanf("%d",&ch);
+
+//     switch(ch)
+//     {
+//         case 1 : printf("\nIn doller : %.2f",(float)rup/87.85);
+//                     break;
+//         case 2 : printf("\nIn Euro : %.2f",(float)rup/102.39);
+//                     break;
+//         case 3 : printf("\nIn Canadian Dollar : %.2f",(float)rup/63.71);
+//                     break;
+//         case 4 : printf("\nIn Saudi Riyal : %.2f",(float)rup/23.85);
+//                     break;
+//         default : printf("\nInvalid Input");
+        
+//     }
+// } 
+
+
 #include<stdio.h>
 int main()
 {
-    int rup,ch;
-    printf("Enter rupee : ");
-    scanf("%d",&rup);
-    printf("\nChoices : ");
-    printf("\n Enter 1 : Doller");
-    printf("\n Enter 2 : Euro");
-    printf("\n Enter 3 : Canadian Doller");
-    printf("\n Enter 4 : Saudi Riyal");
-    printf("\nEnter choice : ");
+    int bal = 1000,ch,amt;
+    printf("\nWelcome to ATM : ");
+    printf("\n1.Check Balalance");
+    printf("\n2.Deposit");
+    printf("\n3.Withdraw");
+    printf("\n4.Exit");
+    printf("\nEnter Choice : ");
     scanf("%d",&ch);
-
     switch(ch)
     {
-        case 1 : printf("\nIn doller : %.2f",(float)rup/87.85);
-                    break;
-        case 2 : printf("\nIn Euro : %.2f",(float)rup/102.39);
-                    break;
-        case 3 : printf("\nIn Canadian Doller : %.2f",(float)rup/63.71);
-                    break;
-        case 4 : printf("\nIn Saudi Riyal : %.2f",(float)rup/23.85);
-                    break;
-        default : printf("\nInvalid Input");
-        
+        case 1: printf("\nBalance = %d",amt);
+                break;
+        case 2 : printf("\nEnter Amount : ");
+                scanf("%d",&amt);
+                bal=bal+amt;
+
+                printf("\n%d is deposited\nCurrent Balance : %d",amt,bal);
+                break;
+        case 3 : printf("\nEnter Amount : ");
+                scanf("%d",&amt);
+                if(bal<=amt)
+                {
+                    bal=bal-amt;
+                    printf("\n%d is deposited\nCurrent Balance : %d",amt,bal);
+                }
+        case 4 : printf("\nThank You For Visiting");
+                break;
+        default : printf("\nInvalid input");        
     }
+
 }
