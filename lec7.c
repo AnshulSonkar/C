@@ -1,15 +1,43 @@
+// #include<stdio.h>
+// int main()
+// {
+//     int a;
+//     printf("Enter a number : ");
+//     scanf("%d",&a);
+//     switch(a)
+//     {
+//         case 1: printf("\nHello");
+//                 break;
+//         case 2 : printf("\nHii");
+//                 break;
+//         default : printf("\nHehehe");
+//     }
+// } 
+
+
 #include<stdio.h>
 int main()
 {
     int a;
-    printf("Enter a number : ");
+    printf("Enter a day : ");
     scanf("%d",&a);
     switch(a)
     {
-        case 1: printf("\nHello");
+        case 1: printf("\nMonday");
                 break;
-        case 2 : printf("\nHii");
+        case 2: printf("\nTuesday");
                 break;
-        default : printf("\nHehehe");
+        case 3: printf("\nWednesday");
+                break;
+        case 4: printf("\nThursday");
+                break;
+        case 5: printf("\nFriday");
+                break;
+        case 6: printf("\nSaturday");
+                break;
+        case 7: printf("\nSunday");
+                break;
+        default : printf("\nInvalid Input");
     }
+
 }
