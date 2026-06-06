@@ -1,29 +1,47 @@
-// First non repeating character
+// Check if the substring exists or not in the main string
 
 #include<stdio.h>
 #include<string.h>
 int main()
 {
-    char s[]="abcaafgh";
-    int ln = strlen(s);
-    int count=0;
-    char freq[256]={0};
-    for(int i=0;i<ln;i++)
+    char s[]="ababbbbb";
+    char target[]="abb";
+    int k=3;
+    char a[k];
+    int ln=0,i,j,l,m,count=0;
+
+    
+    for( i=0;i<s[i]!='\0';i++)
     {
-        freq[s[i]]++;
+        ln++;
     }
-    for(int i=0;i<ln;i++)
+
+    for( i=0;i<ln-k;i++)
     {
-        if(freq[s[i]]==1)
+        for(j=i,l=0;j<i+k;j++,l++)
         {
-            printf("%c is non repeating",s[i]);
+            a[l]=s[j];
+        }
+        for(m=0;m<k;m++)
+        {
+            if(target[m]!=a[m])
+            {
+                break;
+            }
+        }
+        if(m==k)
+        {
             count++;
             break;
         }
         
     }
-    if(count==0)
+    if(count>0)
     {
-        printf("No non repeating character exist");
+        printf("Substring exists");
+    }
+    else
+    {
+        printf("Substring does not exist");
     }
 }
