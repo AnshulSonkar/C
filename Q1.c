@@ -1,31 +1,28 @@
+// Bits Magic
+
+// Find even / odd through bitwise
+
+
+// It is more faster than usually
+
+
 #include<stdio.h>
-struct student 
-{
-    char name[50];
-    int Roll;
-    int age;
-    
-};
+
 
 int main()
 {
-    struct student s1[3];
+    int n;
 
-    for(int i=0;i<3;i++)
+    printf("Enter a number : ");
+    scanf("%d",&n);
+
+    if(n&1)
     {
-        printf("Enter name : ");
-        scanf(" %s",s1[i].name);
-        
-        printf("Enter age : ");
-        scanf(" %d",&s1[i].age);
+        printf("\nOdd");
 
-        printf("Enter Roll No : ");
-        scanf("%d",&s1[i].Roll);
     }
-    for(int i=0;i<3;i++)
+    else
     {
-        printf("Name : %s",s1[i].name);
-        printf("\nAge : %d",s1[i].age);
-        printf("\nRoll no : %d",s1[i].Roll);
+        printf("\nEven");
     }
 }
