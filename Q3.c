@@ -1,15 +1,9 @@
 #include<stdio.h>
-int evenodd(int n)
-{
-    if(n%2==0)
-        printf("Even Number");
-    else
-        printf("Odd");
-}
 int main()
 {
-    int n;
-   printf("Enter a number to check : ");
-   scanf("%d",&n);
-   evenodd(n);
+    int arr[5]={3,4,5,6,7};
+    for(int i=4;i>=0;i--)
+    {
+        printf("%d ",arr[i]);
+    }
 }
