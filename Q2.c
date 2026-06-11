@@ -1,19 +1,10 @@
 #include<stdio.h>
-int x()
-{
-    for(int i=0;i<5;i++)
-    {
-        for(int j=0;j<5;j++)
-        {
-            if(i==j || j==(4-i))
-                printf("*");
-            else
-                printf(" ");
-        }
-        printf("\n");
-    }
-}
+
 int main()
 {
-    x();
+    int arr[5]={1,3,2,4,5};
+    for(int i=0;i<5;i++)
+    {
+        printf("%d ",arr[i]);
+    }
 }
