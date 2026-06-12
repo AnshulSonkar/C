@@ -1,48 +1,31 @@
-// #include<stdio.h>
-// int main()
-// {
-//     int a[5]={1,2,3,2,1},i,j,rev[5],count=0;
-//     for(i=0,j=4;i<5;j--,i++)
-//     {
-//         rev[i]=a[j];
-
-//     }
-//     for(count=0,i=0;i<5;i++)
-//     {
-//         if(rev[i]!=a[j])
-//         {
-//             count++;
-//             break;
-//         }
-
-//     }
-//     if(count>0)
-//     {
-//         printf("Pelindrome !!");
-//     }
-//     else
-//     {
-//         printf("Pelindrome !!");
-//     }
-
-// }
-
-// second approach
 #include <stdio.h>
-int main()
-{
-    int a[5] = {1, 2, 3, 2, 1};
-    int i;
-    for (i = 0; i <= 5 / 2; i++)
-    {
-        if (a[i] == a[5 - 1 - i])
-        {
+
+int main() {
+    int arr[] = {10, 20, 30, 40, 50, 60, 70};
+    int n = 7;
+    int key = 50;
+
+    int low = 0, high = n - 1;
+    int found = 0;
+
+    while (low <= high) {
+        int mid = (low + high) / 2;
+
+        if (arr[mid] == key) {
+            printf("Element found at index %d", mid);
+            found = 1;
             break;
         }
+        else if (key < arr[mid]) {
+            high = mid - 1;
+        }
+        else {
+            low = mid + 1;
+        }
     }
-    if (i > 5 / 2)
-        printf("Pelindrome !!");
-    else
-        printf("Not Pelindrome !!");
+
+    if (!found)
+        printf("Element not found");
+
     return 0;
 }
