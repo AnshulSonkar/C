@@ -1,11 +1,28 @@
+// #include <stdio.h>
+// #include <string.h>
+
+// int main() {
+
+//     char str[] = "Hello";
+
+//     printf("Length = %lu", strlen(str));
+
+//     return 0;
+// }
+
+
 #include <stdio.h>
-#include <string.h>
 
 int main() {
 
-    char str[] = "Hello";
+    char str[] = "Programming";
+    int count = 0;
 
-    printf("Length = %lu", strlen(str));
+    while(str[count] != '\0') {
+        count++;
+    }
+
+    printf("Length = %d", count);
 
     return 0;
 }
