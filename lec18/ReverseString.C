@@ -59,25 +59,46 @@
 
 // Count vowels 
 
+// #include <stdio.h>
+
+// int main() {
+
+//     char str[] = "Programming";
+//     int count = 0;
+
+//     for(int i = 0; str[i] != '\0'; i++) {
+
+//         if(str[i]=='a' || str[i]=='e' || str[i]=='i' ||
+//            str[i]=='o' || str[i]=='u' || str[i]=='A' ||
+//            str[i]=='E' || str[i]=='I' || str[i]=='O' ||
+//            str[i]=='U')
+//         {
+//             count++;
+//         }
+//     }
+
+//     printf("Vowels = %d", count);
+
+//     return 0;
+// } 
+
+
+// Count words in a String
+
 #include <stdio.h>
 
 int main() {
 
-    char str[] = "Programming";
-    int count = 0;
+    char str[] = "Learning C is fun";
+    int words = 1;
 
     for(int i = 0; str[i] != '\0'; i++) {
 
-        if(str[i]=='a' || str[i]=='e' || str[i]=='i' ||
-           str[i]=='o' || str[i]=='u' || str[i]=='A' ||
-           str[i]=='E' || str[i]=='I' || str[i]=='O' ||
-           str[i]=='U')
-        {
-            count++;
-        }
+        if(str[i] == ' ')
+            words++;
     }
 
-    printf("Vowels = %d", count);
+    printf("Words = %d", words);
 
     return 0;
 }
