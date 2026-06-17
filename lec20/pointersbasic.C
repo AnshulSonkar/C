@@ -123,19 +123,37 @@
 
 
 // Function using Pointer 
-#include <stdio.h>
+// #include <stdio.h>
 
-void square(int *n) {
-    *n = (*n) * (*n);
-}
+// void square(int *n) {
+//     *n = (*n) * (*n);
+// }
+
+// int main() {
+
+//     int x = 5;
+
+//     square(&x);
+
+//     printf("%d", x);
+
+//     return 0;
+// } 
+
+
+// Pointer to Pointer 
+#include <stdio.h>
 
 int main() {
 
-    int x = 5;
+    int x = 10;
 
-    square(&x);
+    int *p = &x;
 
-    printf("%d", x);
+    int **q = &p;
+
+    printf("%d\n", *p);
+    printf("%d\n", **q);
 
     return 0;
 }
