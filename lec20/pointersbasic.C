@@ -205,13 +205,27 @@
 
 
 // Adress operator 
+// #include <stdio.h>
+
+// int main() {
+//     int x = 10;
+
+//     printf("Value of x = %d\n", x);
+//     printf("Address of x = %p\n", (void *)&x);
+
+//     return 0;
+// }
+
+
+// 
 #include <stdio.h>
 
 int main() {
-    int x = 10;
+  int x = 10;
+  int *ptr = &x;
 
-    printf("Value of x = %d\n", x);
-    printf("Address of x = %p\n", (void *)&x);
 
-    return 0;
+  printf("%d\n", *ptr);
+  printf("Address of x = %p\n", (void *)&x);
+
 }
