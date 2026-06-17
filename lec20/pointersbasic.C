@@ -14,14 +14,30 @@
 
 
 // Differencing Pointers
+// #include <stdio.h>
+
+// int main() {
+
+//     int x = 50;
+//     int *ptr = &x;
+
+//     printf("%d\n", *ptr);
+
+//     return 0;
+// }
+
+
+// Modify Variable using pointer
 #include <stdio.h>
 
 int main() {
 
-    int x = 50;
+    int x = 10;
     int *ptr = &x;
 
-    printf("%d\n", *ptr);
+    *ptr = 100;
+
+    printf("%d", x);
 
     return 0;
 }
