@@ -28,16 +28,35 @@
 
 
 // Modify Variable using pointer
+// #include <stdio.h>
+
+// int main() {
+
+//     int x = 10;
+//     int *ptr = &x;
+
+//     *ptr = 100;
+
+//     printf("%d", x);
+
+//     return 0;
+// } 
+
+
+// Pointer Arithmetic 
 #include <stdio.h>
 
 int main() {
 
-    int x = 10;
-    int *ptr = &x;
+    int arr[] = {10,20,30,40};
 
-    *ptr = 100;
+    int *ptr = arr;
 
-    printf("%d", x);
+    printf("%d\n", *ptr);
+
+    ptr++;
+
+    printf("%d\n", *ptr);
 
     return 0;
 }
