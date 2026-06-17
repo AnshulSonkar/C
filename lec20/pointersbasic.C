@@ -178,28 +178,40 @@
 
 
 // Reverse Array Using Pointer
+// #include <stdio.h>
+
+// int main() {
+
+//     int arr[] = {1,2,3,4,5};
+
+//     int *start = arr;
+//     int *end = arr + 4;
+
+//     while(start < end) {
+
+//         int temp = *start;
+//         *start = *end;
+//         *end = temp;
+
+//         start++;
+//         end--;
+//     }
+
+//     for(int i=0;i<5;i++)
+//         printf("%d ", arr[i]);
+
+//     return 0;
+// }
+
+
+// Adress operator 
 #include <stdio.h>
 
 int main() {
+    int x = 10;
 
-    int arr[] = {1,2,3,4,5};
-
-    int *start = arr;
-    int *end = arr + 4;
-
-    while(start < end) {
-
-        int temp = *start;
-        *start = *end;
-        *end = temp;
-
-        start++;
-        end--;
-    }
-
-    for(int i=0;i<5;i++)
-        printf("%d ", arr[i]);
+    printf("Value of x = %d\n", x);
+    printf("Address of x = %p\n", (void *)&x);
 
     return 0;
 }
-
