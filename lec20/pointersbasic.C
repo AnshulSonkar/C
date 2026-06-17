@@ -142,20 +142,37 @@
 
 
 // Pointer to Pointer 
+// #include <stdio.h>
+
+// int main() {
+
+//     int x = 10;
+
+//     int *p = &x;
+
+//     int **q = &p;
+
+//     printf("%d\n", *p);
+//     printf("%d\n", **q);
+
+//     return 0;
+// }
+
+
+//String Using Pointer
 #include <stdio.h>
 
 int main() {
 
-    int x = 10;
+    char str[] = "Hello";
 
-    int *p = &x;
+    char *ptr = str;
 
-    int **q = &p;
-
-    printf("%d\n", *p);
-    printf("%d\n", **q);
+    while(*ptr != '\0') {
+        printf("%c", *ptr);
+        ptr++;
+    }
 
     return 0;
 }
-
 
