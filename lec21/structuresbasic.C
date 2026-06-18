@@ -63,29 +63,52 @@
 
 
 // Array of structures
+// #include <stdio.h>
+
+// struct Student {
+//     int roll;
+//     char name[20];
+// };
+
+// int main() {
+
+//     struct Student s[3];
+
+//     for(int i = 0; i < 3; i++) {
+
+//         printf("Enter Roll and Name: ");
+//         scanf("%d %s", &s[i].roll, s[i].name);
+//     }
+
+//     printf("\nStudent Details\n");
+
+//     for(int i = 0; i < 3; i++) {
+
+//         printf("%d %s\n", s[i].roll, s[i].name);
+//     }
+
+//     return 0;
+// } 
+
+
+// Structure and Function
 #include <stdio.h>
 
 struct Student {
     int roll;
-    char name[20];
 };
+
+void display(struct Student s) {
+    printf("Roll = %d", s.roll);
+}
 
 int main() {
 
-    struct Student s[3];
+    struct Student s1;
 
-    for(int i = 0; i < 3; i++) {
+    s1.roll = 101;
 
-        printf("Enter Roll and Name: ");
-        scanf("%d %s", &s[i].roll, s[i].name);
-    }
-
-    printf("\nStudent Details\n");
-
-    for(int i = 0; i < 3; i++) {
-
-        printf("%d %s\n", s[i].roll, s[i].name);
-    }
+    display(s1);
 
     return 0;
 }
