@@ -136,27 +136,48 @@
 
 
 // Nested Structure 
+// #include <stdio.h>
+
+// struct Address {
+//     char city[20];
+// };
+
+// struct Student {
+//     int roll;
+//     struct Address addr;
+// };
+
+// int main() {
+
+//     struct Student s1;
+
+//     s1.roll = 101;
+
+//     printf("Enter City: ");
+//     scanf("%s", s1.addr.city);
+
+//     printf("%d %s", s1.roll, s1.addr.city);
+
+//     return 0;
+// } 
+
+
+// typedef with structure 
 #include <stdio.h>
 
-struct Address {
-    char city[20];
-};
-
-struct Student {
+typedef struct Student {
     int roll;
-    struct Address addr;
-};
+    float cgpa;
+} stu;
 
 int main() {
 
-    struct Student s1;
+    stu s1;
 
     s1.roll = 101;
+    s1.cgpa = 9.1;
 
-    printf("Enter City: ");
-    scanf("%s", s1.addr.city);
-
-    printf("%d %s", s1.roll, s1.addr.city);
+    printf("%d %.2f", s1.roll, s1.cgpa);
 
     return 0;
 }
