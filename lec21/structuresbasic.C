@@ -21,24 +21,42 @@
 
 
 // Structre with string
+// #include <stdio.h>
+
+// struct Student {
+//     int roll;
+//     char name[50];
+// };
+
+// int main() {
+
+//     struct Student s1;
+
+//     s1.roll = 101;
+
+//     printf("Enter Name: ");
+//     scanf("%s", s1.name);
+
+//     printf("Roll = %d\n", s1.roll);
+//     printf("Name = %s\n", s1.name);
+
+//     return 0;
+// } 
+
+
+// Structure Initialization 
 #include <stdio.h>
 
 struct Student {
     int roll;
-    char name[50];
+    float cgpa;
 };
 
 int main() {
 
-    struct Student s1;
+    struct Student s1 = {101, 8.9};
 
-    s1.roll = 101;
-
-    printf("Enter Name: ");
-    scanf("%s", s1.name);
-
-    printf("Roll = %d\n", s1.roll);
-    printf("Name = %s\n", s1.name);
+    printf("%d %.2f", s1.roll, s1.cgpa);
 
     return 0;
 }
