@@ -1,3 +1,6 @@
+// Malloc()
+// int *arr;
+// arr = (int *)malloc(100 * sizeof(int));
 // #include <stdio.h>
 // #include <stdlib.h>
 
@@ -211,24 +214,24 @@
 
 
 // DMA with Sructure 
-#include <stdio.h>
-#include <stdlib.h>
+// #include <stdio.h>
+// #include <stdlib.h>
 
-struct Student {
-    int roll;
-};
+// struct Student {
+//     int roll;
+// };
 
-int main() {
+// int main() {
 
-    struct Student *ptr;
+//     struct Student *ptr;
 
-    ptr = (struct Student *)malloc(sizeof(struct Student));
+//     ptr = (struct Student *)malloc(sizeof(struct Student));
 
-    ptr->roll = 101;
+//     ptr->roll = 101;
 
-    printf("%d", ptr->roll);
+//     printf("%d", ptr->roll);
 
-    free(ptr);
+//     free(ptr);
 
-    return 0;
-}
+//     return 0;
+// }
