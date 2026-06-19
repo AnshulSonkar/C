@@ -98,16 +98,42 @@
 
 
 // Free()
+// #include <stdio.h>
+// #include <stdlib.h>
+
+// int main() {
+
+//     int *ptr;
+
+//     ptr = (int *)malloc(5 * sizeof(int));
+
+//     free(ptr);
+
+//     return 0;
+// } 
+
+
+// Sum of Dynamic Array
 #include <stdio.h>
 #include <stdlib.h>
 
 int main() {
 
-    int *ptr;
+    int n;
+    scanf("%d", &n);
 
-    ptr = (int *)malloc(5 * sizeof(int));
+    int *arr = (int *)malloc(n * sizeof(int));
 
-    free(ptr);
+    int sum = 0;
+
+    for(int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+        sum += arr[i];
+    }
+
+    printf("Sum = %d", sum);
+
+    free(arr);
 
     return 0;
 }
