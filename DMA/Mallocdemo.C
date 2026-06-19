@@ -1,3 +1,6 @@
+// Dynamic Memory
+// int *arr;
+// arr = (int *)malloc(100 * sizeof(int));
 // Malloc()
 // int *arr;
 // arr = (int *)malloc(100 * sizeof(int));
