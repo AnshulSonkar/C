@@ -142,19 +142,40 @@
 
 
 // GCD Using Recursion
+// #include <stdio.h>
+
+// int gcd(int a, int b) {
+
+//     if(b == 0)
+//         return a;
+
+//     return gcd(b, a % b);
+// }
+
+// int main() {
+
+//     printf("%d", gcd(24, 18));
+
+//     return 0;
+// } 
+
+
+// Decimal to binary 
 #include <stdio.h>
 
-int gcd(int a, int b) {
+void binary(int n) {
 
-    if(b == 0)
-        return a;
+    if(n == 0)
+        return;
 
-    return gcd(b, a % b);
+    binary(n / 2);
+
+    printf("%d", n % 2);
 }
 
 int main() {
 
-    printf("%d", gcd(24, 18));
+    binary(10);
 
     return 0;
 }
