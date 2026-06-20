@@ -215,7 +215,7 @@
 // } 
 
 
-// 
+// Employee Structure 
 // #include <stdio.h>
 
 // struct Employee {
