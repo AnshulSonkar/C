@@ -161,21 +161,45 @@
 
 
 // Decimal to binary 
+// #include <stdio.h>
+
+// void binary(int n) {
+
+//     if(n == 0)
+//         return;
+
+//     binary(n / 2);
+
+//     printf("%d", n % 2);
+// }
+
+// int main() {
+
+//     binary(10);
+
+//     return 0;
+// } 
+
+
+// Reverse String Using Recursion
 #include <stdio.h>
+#include <string.h>
 
-void binary(int n) {
+void reverse(char str[], int index) {
 
-    if(n == 0)
+    if(index < 0)
         return;
 
-    binary(n / 2);
+    printf("%c", str[index]);
 
-    printf("%d", n % 2);
+    reverse(str, index - 1);
 }
 
 int main() {
 
-    binary(10);
+    char str[] = "HELLO";
+
+    reverse(str, strlen(str) - 1);
 
     return 0;
 }
