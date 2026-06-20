@@ -206,28 +206,59 @@
 
 
 // Palindrome Using Recursion 
-#include <stdio.h>
-#include <string.h>
+// #include <stdio.h>
+// #include <string.h>
 
-int palindrome(char str[], int start, int end) {
+// int palindrome(char str[], int start, int end) {
 
-    if(start >= end)
-        return 1;
+//     if(start >= end)
+//         return 1;
 
-    if(str[start] != str[end])
-        return 0;
+//     if(str[start] != str[end])
+//         return 0;
 
-    return palindrome(str, start + 1, end - 1);
-}
+//     return palindrome(str, start + 1, end - 1);
+// }
 
-int main() {
+// int main() {
 
-    char str[] = "madam";
+//     char str[] = "madam";
 
-    if(palindrome(str, 0, strlen(str) - 1))
-        printf("Palindrome");
-    else
-        printf("Not Palindrome");
+//     if(palindrome(str, 0, strlen(str) - 1))
+//         printf("Palindrome");
+//     else
+//         printf("Not Palindrome");
 
-    return 0;
-}
+//     return 0;
+// } 
+
+
+// Recursive Binary Search
+// #include <stdio.h>
+
+// int binarySearch(int arr[], int low, int high, int key) {
+
+//     if(low > high)
+//         return -1;
+
+//     int mid = (low + high) / 2;
+
+//     if(arr[mid] == key)
+//         return mid;
+
+//     if(key < arr[mid])
+//         return binarySearch(arr, low, mid - 1, key);
+
+//     return binarySearch(arr, mid + 1, high, key);
+// }
+
+// int main() {
+
+//     int arr[] = {10,20,30,40,50};
+
+//     int pos = binarySearch(arr, 0, 4, 40);
+
+//     printf("%d", pos);
+
+//     return 0;
+// } 
