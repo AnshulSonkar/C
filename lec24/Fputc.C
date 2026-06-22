@@ -1,14 +1,14 @@
-#include <stdio.h>
+// #include <stdio.h>
 
-int main() {
+// int main() {
 
-    FILE *fp;
+//     FILE *fp;
 
-    fp = fopen("char.txt", "w");
+//     fp = fopen("char.txt", "w");
 
-    fputc('A', fp);
+//     fputc('A', fp);
 
-    fclose(fp);
+//     fclose(fp);
 
-    return 0;
-}
+//     return 0;
+// }
