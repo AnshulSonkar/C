@@ -1,18 +1,18 @@
-#include <stdio.h>
+// #include <stdio.h>
 
-int main() {
+// int main() {
 
-    FILE *fp;
+//     FILE *fp;
 
-    char str[100];
+//     char str[100];
 
-    fp = fopen("text.txt", "r");
+//     fp = fopen("text.txt", "r");
 
-    fgets(str, sizeof(str), fp);
+//     fgets(str, sizeof(str), fp);
 
-    printf("%s", str);
+//     printf("%s", str);
 
-    fclose(fp);
+//     fclose(fp);
 
-    return 0;
-}
+//     return 0;
+// }
