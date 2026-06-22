@@ -1,3 +1,29 @@
+// #include <stdio.h>
+
+// int main() {
+
+//     FILE *fp;
+
+//     int roll;
+//     char name[20];
+
+//     fp = fopen("student.txt", "w");
+
+//     printf("Enter Roll: ");
+//     scanf("%d", &roll);
+
+//     printf("Enter Name: ");
+//     scanf("%s", name);
+
+//     fprintf(fp, "%d %s", roll, name);
+
+//     fclose(fp);
+
+//     return 0;
+// }  
+
+
+// Read Student Record 
 #include <stdio.h>
 
 int main() {
@@ -7,15 +33,12 @@ int main() {
     int roll;
     char name[20];
 
-    fp = fopen("student.txt", "w");
+    fp = fopen("student.txt", "r");
 
-    printf("Enter Roll: ");
-    scanf("%d", &roll);
+    fscanf(fp, "%d %s", &roll, name);
 
-    printf("Enter Name: ");
-    scanf("%s", name);
-
-    fprintf(fp, "%d %s", roll, name);
+    printf("Roll = %d\n", roll);
+    printf("Name = %s\n", name);
 
     fclose(fp);
 
