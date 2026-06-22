@@ -1,18 +1,18 @@
-#include <stdio.h>
+// #include <stdio.h>
 
-int main() {
+// int main() {
 
-    FILE *fp;
+//     FILE *fp;
 
-    char ch;
+//     char ch;
 
-    fp = fopen("data.txt", "r");
+//     fp = fopen("data.txt", "r");
 
-    while((ch = fgetc(fp)) != EOF) {
-        printf("%c", ch);
-    }
+//     while((ch = fgetc(fp)) != EOF) {
+//         printf("%c", ch);
+//     }
 
-    fclose(fp);
+//     fclose(fp);
 
-    return 0;
-}
+//     return 0;
+// } 
