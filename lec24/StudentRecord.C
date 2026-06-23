@@ -72,26 +72,26 @@
 
 
 // Count Characters in file
-#include <stdio.h>
+// #include <stdio.h>
 
-int main() {
+// int main() {
 
-    FILE *fp;
+//     FILE *fp;
 
-    char ch;
+//     char ch;
 
-    int count = 0;
+//     int count = 0;
 
-    fp = fopen("data.txt", "r");
+//     fp = fopen("data.txt", "r");
 
-    while((ch = fgetc(fp)) != EOF) {
+//     while((ch = fgetc(fp)) != EOF) {
 
-        count++;
-    }
+//         count++;
+//     }
 
-    printf("Characters = %d", count);
+//     printf("Characters = %d", count);
 
-    fclose(fp);
+//     fclose(fp);
 
-    return 0;
-}
+//     return 0;
+// } 
