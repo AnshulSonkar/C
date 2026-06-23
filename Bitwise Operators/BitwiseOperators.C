@@ -114,16 +114,38 @@
 
 
 // Check power of 2
+// #include <stdio.h>
+
+// int main() {
+
+//     int n = 16;
+
+//     if((n & (n - 1)) == 0)
+//         printf("Power of 2");
+//     else
+//         printf("Not Power of 2");
+
+//     return 0;
+// } 
+
+
+// Count of sit bits
 #include <stdio.h>
 
 int main() {
 
-    int n = 16;
+    int n = 13;
+    int count = 0;
 
-    if((n & (n - 1)) == 0)
-        printf("Power of 2");
-    else
-        printf("Not Power of 2");
+    while(n) {
+
+        if(n & 1)
+            count++;
+
+        n >>= 1;
+    }
+
+    printf("%d", count);
 
     return 0;
 }
