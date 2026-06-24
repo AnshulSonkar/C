@@ -139,4 +139,18 @@
 //     printf("Arguments = %d", argc - 1);
 
 //     return 0;
+// }  
+
+
+// Display Environment Style Data
+// #include <stdio.h>
+
+// int main(int argc, char *argv[])
+// {
+//     for(int i = 0; i < argc; i++)
+//     {
+//         printf("argv[%d] = %s\n", i, argv[i]);
+//     }
+
+//     return 0;
 // } 
