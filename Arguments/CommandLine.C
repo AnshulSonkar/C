@@ -128,4 +128,15 @@
 //     }
 
 //     return 0;
-// }
+// } 
+
+
+// Count Arguments
+// #include <stdio.h>
+
+// int main(int argc, char *argv[])
+// {
+//     printf("Arguments = %d", argc - 1);
+
+//     return 0;
+// } 
