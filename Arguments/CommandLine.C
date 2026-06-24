@@ -62,3 +62,20 @@
 
 //     return 0;
 // }
+
+
+// Check number of Arguments
+// #include <stdio.h>
+
+// int main(int argc, char *argv[])
+// {
+//     if(argc < 2)
+//     {
+//         printf("Argument Missing");
+//         return 1;
+//     }
+
+//     printf("Argument Received");
+
+//     return 0;
+// }
